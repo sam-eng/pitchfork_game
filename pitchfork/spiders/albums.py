@@ -1,4 +1,9 @@
 import scrapy
+import re
+
+def remove_html(data):
+	p = re.compile(r'<.*?>')
+	return p.sub('', data)
 
 class AlbumsSpider(scrapy.Spider):
 	name = "albums"
@@ -15,10 +20,8 @@ class AlbumsSpider(scrapy.Spider):
 		filename = response.url.split("/")[-2] + '.html'
 		album_names = response.css('.review__title-album').extract()
 		artists = response.css('.review__title-artist').extract()
-		print(album_names)
-		print(artists)
 		with open(filename, 'w') as f:
 			for i in album_names:
-				f.write(i)
+				f.write(remove_html(i) + "\n")
 			for j in artists:
-				f.write(j)
+				f.write(remove_html(j) + "\n")
