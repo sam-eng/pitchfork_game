@@ -12,7 +12,7 @@ class AlbumsSpider(scrapy.Spider):
 		urls = [
 			'https://pitchfork.com/reviews/albums/popular/?page=1',
 			'https://pitchfork.com/reviews/albums/popular/?page=2',
-			'https://pitchfork.com/reviews/albums/popular/?page=3',
+			#'https://pitchfork.com/reviews/albums/popular/?page=3',
 		]
 		for url in urls:
 			yield scrapy.Request(url=url, callback=self.parse)
