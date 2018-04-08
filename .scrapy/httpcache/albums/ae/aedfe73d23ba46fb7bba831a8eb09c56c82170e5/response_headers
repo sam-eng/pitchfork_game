@@ -1,0 +1,18 @@
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, stale-while-revalidate=300; stale-while-error=600
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+X-Format: desktop
+Accept-Ranges: bytes
+Date: Sat, 07 Apr 2018 22:49:35 GMT
+Via: 1.1 varnish
+Age: 0
+X-Served-By: cache-jfk8129-JFK
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1523141374.050523,VS0,VE1025
+Vary: Accept-Encoding, X-Format
+Content-Security-Policy: default-src https: data: 'unsafe-inline' 'unsafe-eval'; child-src https: data: blob:; connect-src https: data: blob:; font-src https: data:; img-src https: data: blob:; media-src https: data: blob:; object-src https:; script-src https: data: blob: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; block-all-mixed-content; upgrade-insecure-requests; report-uri https://capture.condenastdigital.com/csp/pitchfork
+Strict-Transport-Security: max-age=7776000; preload
+Set-Cookie: CN_xid=99a4eae9-89cf-420f-aefa-71ebc700c22e; Expires=Thu, 04 Oct 2018 22:49:35 GMT; path=/;
+Set-Cookie: xid1=1; Expires=Sat, 07 Apr 2018 22:49:50 GMT; path=/;
